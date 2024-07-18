@@ -67,15 +67,17 @@ export default defineConfig(({ command }) => ({
     }),
   ],
   build: {
+    outDir: 'dist',
     sourcemap: true,
     rollupOptions: {
       output: {
         manualChunks: {
           react: ['react', 'react-dom'],
-          // Add other vendor chunks as needed
         }
       }
-    }
+    },
+    assetsDir: 'assets',
+    emptyOutDir: true,
   },
   server: {
     https: true,
