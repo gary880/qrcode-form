@@ -1,15 +1,14 @@
 import { defineConfig } from 'vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import react from '@vitejs/plugin-react'
-import basicSsl from '@vitejs/plugin-basic-ssl'
 import mkcert from 'vite-plugin-mkcert'
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => ({
+  base: '/qrcode-form/', // Updated with your repo name
   plugins: [
     react(),
     mkcert(),
-    command === 'serve',
     VitePWA({
       registerType: 'autoUpdate',
       injectRegister: 'auto',
