@@ -11,11 +11,9 @@
   },
   "dependencies": {
     "@yudiel/react-qr-scanner": "^2.0.4",
-    "qr-scanner": "^1.4.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-qr-code": "^2.0.15",
-    "react-qr-scanner": "^1.0.0-alpha.11",
     "react-router-dom": "^6.24.1",
     "react-signature-canvas": "^1.0.6",
     "reset-css": "^5.0.2"
